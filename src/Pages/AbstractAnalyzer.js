@@ -8,13 +8,13 @@ import userEvent from '@testing-library/user-event';
 const API_KEY = "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";
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
-  "role": "system", "content": "create 5 questions with different meaning related to the topic I will provide you"
+  "role": "system", "content": "act as an abstract analyzer and breakdown the abstract according to background, existing work, problem, methodology, result and conclusion. if you are not able to find the component, mention “NOT FOUND”."
 }
 
-function QGenerate() {
+function AbstractAnalyzer() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm ChatGPT! Give me question I will give you 5 question with same meaning",
+      message: "Hello, I'm ChatGPT! Give me Abstract I will give you background, existing work, problem, methodology, result",
       sentTime: "just now",
       sender: "ChatGPT"
     }
@@ -109,4 +109,4 @@ function QGenerate() {
   )
 }
 
-export default QGenerate
+export default AbstractAnalyzer

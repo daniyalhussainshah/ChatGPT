@@ -6,6 +6,7 @@ import GrammerCorrection from './Pages/GrammerCorrection'
 import KeyWords from './Pages/KeyWords'
 import QuestionsAnswers from './Pages/QuestionsAnswers'
 import QGenerate from './Pages/QGenerate'
+import AbstractAnalyzer from './Pages/AbstractAnalyzer'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
     <Route path='/keywords' element={<KeyWords/>}></Route>
     <Route path='/questionsanswers' element={<QuestionsAnswers/>}></Route>
     <Route path='/qgenerate' element={<QGenerate/>}></Route>
+    <Route path='/abstractanalyzer' element={<AbstractAnalyzer/>}></Route>
 
     
     </Routes>

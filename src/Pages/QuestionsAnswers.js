@@ -5,7 +5,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput, Typin
 import Navbar from '../components/Navbar';
 import userEvent from '@testing-library/user-event';
 
-const API_KEY = "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";
+const API_KEY = "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";
 // "Explain things like you would to a 10 year old learning how to code."
 const systemMessage = { //  Explain things like you're talking to a software professional with 5 years of experience.
   "role": "system", "content": "I am a highly intelligent question answering bot. If you ask me a question that is rooted in truth, I will give you the answer. If you ask me a question that is nonsense, trickery, or has no clear answer, I will respond with Unknown"
@@ -87,7 +87,7 @@ function QuestionsAnswers() {
 
   return (
     <><Navbar/>
-    <div className="container">
+    <div className="container my-3">
       <div style={{ position:"relative", height: "500px"}}>
         <MainContainer>
           <ChatContainer>       

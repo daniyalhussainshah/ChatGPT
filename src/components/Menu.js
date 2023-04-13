@@ -41,8 +41,9 @@ const Menu = () => {
               </p>
             </div>
           </div>
-
-          <div class="card mx-2 my-5" style={{width: "18rem",height:"300px"}}>
+          </div>
+          <div class="row">
+          <div class="card mx-2 my-5" style={{width: "18rem",height:"310px"}}>
             <Link to="/qgenerate"><img class="card-img-top" src={QuestionsAnswers} alt="Card image cap" /></Link>
             <div class="card-body">
               <h4 class="card-title" style={{textAlign:"start"}}>Question Generate</h4>
@@ -51,7 +52,17 @@ const Menu = () => {
               </p>
             </div>
           </div>
-        </div>
+
+          <div class="card mx-2 my-5" style={{width: "18rem",height:"310px"}}>
+            <Link to="/abstractanalyzer"><img class="card-img-top" src={QuestionsAnswers} alt="Card image cap" /></Link>
+            <div class="card-body">
+              <h4 class="card-title" style={{textAlign:"start"}}>Abstract Analyzer</h4>
+              <p class="card-text" style={{textAlign:"start"}}>
+              I will give you background, existing work, problem, methodology, result
+              </p>
+            </div>
+          </div>
+          </div>
       </div>
     </>
   );
